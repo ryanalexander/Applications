@@ -51,14 +51,18 @@
                     </span>
                 </div>
                 <div class="content">
-                    <div class="application-box">
-                        <div class="title">FakeJake Moderator Application</div>
-                        <div class="title">Do you have what it takes to represent FakeJake's Discord server as a Moderator? Why not try out for the position?</div>
-                        <div class="closes">
-                            <p>Closes</p>
-                            <p>30/03/2019</p>
-                        </div>
-                    </div>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Close Date</th>
+                        </tr>
+                        <tr>
+                            <td>FakeJake Moderator Applications</td>
+                            <td>Testing post - Do not apply</td>
+                            <td>27/03/2019</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
 
