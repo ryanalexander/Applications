@@ -1,7 +1,7 @@
 * {margin:0;padding:0;}
 
 body {
-    background: #fff;
+    background: #fcfcfc;
 }
 
 /* Main Navigation bar */
@@ -25,10 +25,16 @@ body {
 }
 
 /* Variable for each element inside the navbar */
-.nav .content-inner .col { display: table-cell; }
+.nav .content-inner .col { display: table-cell; vertical-align: middle; }
 
 /* Title */
-.nav .content-inner .col:first-child {text-align: left;padding:.5% 0;}
+.nav .content-inner .col:first-child {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    padding:.5% 0;
+}
 
 /* User Panel */
 .nav .content-inner .col:last-child {
@@ -62,7 +68,6 @@ body {
 
 body .main-content-inner {
     width: 85%;
-    height: 95%;
     margin: auto;
 }
 
@@ -71,23 +76,51 @@ body .main-content-inner .applications .content-holder {
     margin: 2% auto;
     border-radius: 5px;
     background: #f9f9f9;
+    box-shadow: 0 0 1px #00000047;
 }
 body .main-content-inner .applications .content-holder .title {
-    display: block;
-    width: 100%;
+    display: table;
+    width: 95%;
+    padding: 1.5% 0;
+    margin:auto;
+    cursor: pointer;
 }
-body .main-content-inner .applications .content-holder .title .left {
-    float: left;
-}
-body .main-content-inner .applications .content-holder .title .right {
-    float: right;
-}
+body .main-content-inner .applications .content-holder .title span {display: table-cell;}
+body .main-content-inner .applications .content-holder .title span:first-child {text-align:left;}
+body .main-content-inner .applications .content-holder .title span:last-child {text-align:right;}
+
+body .main-content-inner .applications .content-holder .title span:last-child i.fa-caret-down {display:none;}
+body .main-content-inner .applications .content-holder .title span:last-child i.fa-caret-right {display:block;}
+body .main-content-inner .applications .content-holder.active .title span:last-child i.fa-caret-right {display:none;}
+body .main-content-inner .applications .content-holder.active .title span:last-child i.fa-caret-down {display:block;}
 
 body .main-content-inner .applications .content-holder .content {
+    display:none;
+}
+body .main-content-inner .applications .content-holder.active .content {
     display: block;
     width: 100%;
 }
 
+/*
+ * Stelch Watermark
+ */
+
+body .watermark {
+    position: absolute;
+    bottom:0;width:100%;
+    padding: 2% 0;
+    text-align:center;
+    background: #efefef;
+    color: #a4a4a4;
+    cursor: pointer;
+}
+body .watermark i {
+    font-style: normal;
+}
+body .watermark:hover i {
+    color: #55a1ff;
+}
 /*
  * RESETS
  */
