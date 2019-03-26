@@ -1,7 +1,11 @@
+/* Import external fonts */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
 * {margin:0;padding:0;}
 
 body {
     background: #fcfcfc;
+    font-family: 'Muli', sans-serif;
 }
 
 /* Main Navigation bar */
@@ -75,8 +79,8 @@ body .main-content-inner .applications .content-holder {
     width: 80%;
     margin: 2% auto;
     border-radius: 5px;
-    background: #f9f9f9;
-    box-shadow: 0 0 1px #00000047;
+    background: #e2e2e2;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.44);
 }
 body .main-content-inner .applications .content-holder .title {
     display: table;
@@ -104,16 +108,28 @@ body .main-content-inner .applications .content-holder.active .content {
 
 body .main-content-inner .applications .content-holder .content table {
     border: none;
-    width: 100%;
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
 }
 
 body .main-content-inner .applications .content-holder .content table th {
-    background: #999999;
-    color: #fff;
-}
+    border: 1px solid #ddd;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff8b3f;
+    color: white;
 
+}
+body .main-content-inner .applications .content-holder .content table tr:hover {background-color: #ddd;cursor: pointer;}
+
+body .main-content-inner .applications .content-holder .content table tr {
+    background: #d4d4d4;
+    color: #000;
+}
 body .main-content-inner .applications .content-holder .content table td {
-    border-bottom: 1px solid black;
+    padding: 0.5%;
 }
 
 /*
