@@ -1,0 +1,98 @@
+* {margin:0;padding:0;}
+
+body {
+    background: #fff;
+}
+
+/* Main Navigation bar */
+
+/* Outer container to help with alignment */
+.nav {
+    width: 100%;
+    display: block;
+    top: 0;
+    background: #fea65f;
+    background-image: linear-gradient(50deg, #fea65f 10%, #fba35f 80%);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.28)
+}
+
+/* Inner container to help with alignment */
+.nav .content-inner {
+    margin: auto;
+    width: 95%;
+    color: #fff;
+    display: table;
+}
+
+/* Variable for each element inside the navbar */
+.nav .content-inner .col { display: table-cell; }
+
+/* Title */
+.nav .content-inner .col:first-child {text-align: left;padding:.5% 0;}
+
+/* User Panel */
+.nav .content-inner .col:last-child {
+    text-align: right;
+    cursor: pointer;
+
+}
+
+/* Dropdown */
+.nav .content-inner .col:last-child .dropdown {
+    background: #fba35f;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 1px black;
+    position: absolute;
+    right: 0;
+    width: 10%;
+    display: none;
+}
+
+/* Show the dropdown when user hovers over parent element */
+.nav .content-inner .col:last-child:hover .dropdown {
+    display: block;
+}
+
+/* idk i'm too non-sober for this */
+.nav .content-inner .col:last-child .dropdown ul {
+    list-style: none;
+    text-align: left;
+    font-weight: normal;
+}
+
+body .main-content-inner {
+    width: 85%;
+    height: 95%;
+    margin: auto;
+}
+
+body .main-content-inner .applications .content-holder {
+    width: 80%;
+    margin: 2% auto;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+body .main-content-inner .applications .content-holder .title {
+    display: block;
+    width: 100%;
+}
+body .main-content-inner .applications .content-holder .title .left {
+    float: left;
+}
+body .main-content-inner .applications .content-holder .title .right {
+    float: right;
+}
+
+body .main-content-inner .applications .content-holder .content {
+    display: block;
+    width: 100%;
+}
+
+/*
+ * RESETS
+ */
+
+/* Link reset */
+a:link,a:visited {
+    color: inherit;text-decoration: inherit;
+}
